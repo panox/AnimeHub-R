@@ -1,1 +1,699 @@
-h1 {color: pink;}
+body {
+  font: 13px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #dbe0eb;
+}
+
+.checkout {
+  width: 310px;
+  margin: 50px auto;
+  padding: 15px;
+  background: #f3f6fa;
+  border: 1px solid;
+  border-color: #c2cadb #bbc5d6 #b7c0cd;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.checkout > p {
+  zoom: 1;
+}
+
+.checkout > p:before, .checkout > p:after {
+  content: '';
+  display: table;
+}
+
+.checkout > p:after {
+  clear: both;
+}
+
+.checkout > p + p {
+  margin-top: 15px;
+}
+
+.checkout-price {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 40px;
+  font: 14px/40px Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+  text-indent: -1px;
+  letter-spacing: -1px;
+  background: #e54930;
+  border: 1px solid;
+  border-color: #b33323 #ab3123 #982b1f;
+  border-radius: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: -webkit-linear-gradient(top, #f75a3b, #d63b29);
+  background-image: -moz-linear-gradient(top, #f75a3b, #d63b29);
+  background-image: -o-linear-gradient(top, #f75a3b, #d63b29);
+  background-image: linear-gradient(to bottom, #f75a3b, #d63b29);
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-price:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  border: 2px solid #f5f8fb;
+  border-radius: 18px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px rgba(0, 0, 0, 0.25), 0 -1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px rgba(0, 0, 0, 0.25), 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  margin: 0;
+  line-height: normal;
+  font-family: inherit;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.checkout-input {
+  float: left;
+  padding: 0 7px;
+  height: 32px;
+  color: #525864;
+  background: white;
+  border: 1px solid;
+  border-color: #b3c0e2 #bcc5e2 #c0ccea;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, #f6f8fa, white);
+  background-image: -moz-linear-gradient(top, #f6f8fa, white);
+  background-image: -o-linear-gradient(top, #f6f8fa, white);
+  background-image: linear-gradient(to bottom, #f6f8fa, white);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.checkout-input:focus {
+  border-color: #46aefe;
+  outline: none;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px #46aefe;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px #46aefe;
+}
+
+.lt-ie9 .checkout-input {
+  line-height: 30px;
+}
+
+.checkout-name {
+  width: 150px;
+}
+
+.checkout-card {
+  width: 210px;
+}
+
+.checkout-exp,
+.checkout-cvc {
+  margin-left: 15px;
+  width: 45px;
+}
+
+.checkout-btn {
+  width: 100%;
+  height: 34px;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid;
+  border-color: #1486f9 #0f7de9 #0d6acf;
+  background: #1993fb;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, #4cb1fe, #229afc 40%, #138df6);
+  background-image: -moz-linear-gradient(top, #4cb1fe, #229afc 40%, #138df6);
+  background-image: -o-linear-gradient(top, #4cb1fe, #229afc 40%, #138df6);
+  background-image: linear-gradient(to bottom, #4cb1fe, #229afc 40%, #138df6);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-btn:active {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-color: #075bba #0c69d2 #0f7de9;
+  background-image: -webkit-linear-gradient(top, #1281dc, #1593fc);
+  background-image: -moz-linear-gradient(top, #1281dc, #1593fc);
+  background-image: -o-linear-gradient(top, #1281dc, #1593fc);
+  background-image: linear-gradient(to bottom, #1281dc, #1593fc);
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
+}
+
+:-moz-placeholder {
+  color: #acb6c8 !important;
+}
+
+::-moz-placeholder {
+  color: #acb6c8 !important;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: #acb6c8;
+}
+
+:-ms-input-placeholder {
+  color: #acb6c8;
+}
+
+::-moz-focus-inner {
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* =====================
+    Removes outline
+ ========================*/
+.btn:focus, .btn:active, .btn:active:focus {
+  outline: none;
+}
+
+/* =====================
+    Body
+ ========================*/
+body {
+  background: #2d353d;
+  font-family: helvetica neue, sans-serif;
+  background: url("http://dir.agosto.nl/dump/profile.png");
+}
+
+/* =====================
+    Navbar
+ ========================*/
+nav {
+  padding: 8px 0 0 0;
+}
+
+nav a {
+  font-size: 16px;
+}
+
+nav h4 {
+  font-size: 19px;
+  padding-right: 50px;
+}
+
+nav button {
+  margin-right: 50px;
+}
+
+/* =====================
+    Payment
+ ========================*/
+.paymessage {
+  font-size: 21px;
+  font-weight: bold;
+  color: #2D63BA;
+}
+
+/* =====================
+    All anime Page
+ ========================*/
+.anime {
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  margin-bottom: 9px;
+}
+
+.anime img {
+  margin-bottom: 6px;
+  border-radius: 14px;
+}
+
+.anime .title {
+  width: 76%;
+  text-overflow: clip;
+  text-align: center;
+  font-size: 15px;
+}
+
+.anime .score {
+  font-size: 19px;
+}
+
+/* =====================
+    One Anime Page
+ ========================*/
+.oneAnime {
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.oneAnime .title {
+  font-size: 19px;
+}
+
+.oneAnime .image {
+  margin: 13px auto;
+  border-radius: 40px;
+}
+
+.oneAnime .btnz {
+  padding: 4px 14px;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  color: #FFF;
+  outline: none;
+}
+
+.oneAnime .btnz:hover {
+  color: #efefef;
+}
+
+.oneAnime .facebook {
+  background-color: #3b5998;
+}
+
+.oneAnime .description {
+  margin-top: 13px;
+}
+
+/* =====================
+    Comments
+ ========================*/
+.btn-danger {
+  background-color: #CC776A;
+  border-color: #CC776A;
+}
+
+.btn-info {
+  background-color: #674B75;
+  border-color: #674B75;
+}
+
+.blue-submit {
+  background-color: #5B748C;
+  border-color: #5B748C;
+}
+
+.comments-container {
+  font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+  margin: 60px auto 15px;
+  width: 768px;
+}
+
+.comments-container ul {
+  list-style-type: none;
+}
+
+.comments-container h1 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.comments-container form {
+  text-align: center;
+}
+
+.comments-list {
+  margin-top: 30px;
+  position: relative;
+}
+
+.comments-list:before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: #c7cacb;
+  position: absolute;
+  left: 32px;
+  top: 0;
+}
+
+.comments-list:after {
+  content: '';
+  position: absolute;
+  background: #c7cacb;
+  bottom: 0;
+  left: 27px;
+  width: 7px;
+  height: 7px;
+  border: 3px solid #dee1e3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.comments-list li {
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+}
+
+.comments-list li:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  width: 0;
+}
+
+.comment-main-level:after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
+
+/**
+  * Comment Box
+  ---------------------------*/
+.comment-box {
+  width: 680px;
+  float: right;
+  position: relative;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.comment-box:before, .comment-box:after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  display: block;
+  border-width: 10px 12px 10px 0;
+  border-style: solid;
+  border-color: transparent #FCFCFC;
+  top: 8px;
+  left: -11px;
+}
+
+.comment-box:before {
+  border-width: 11px 13px 11px 0;
+  border-color: transparent rgba(0, 0, 0, 0.05);
+  left: -12px;
+}
+
+.comment-box .comment-head {
+  background: #FCFCFC;
+  padding: 10px 12px;
+  border-bottom: 1px solid #E5E5E5;
+  overflow: hidden;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.comment-box .comment-head i {
+  float: right;
+  margin-left: 14px;
+  position: relative;
+  top: 2px;
+  color: #A6A6A6;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.comment-box .comment-head i:hover {
+  color: #03658c;
+}
+
+.comment-box .comment-name {
+  color: #283035;
+  font-size: 14px;
+  font-weight: 700;
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-box .comment-name a {
+  color: #283035;
+}
+
+.comment-box .comment-name span {
+  float: left;
+  color: #999;
+  font-size: 13px;
+  position: relative;
+  top: 1px;
+}
+
+.comment-box .comment-content {
+  background: #FFF;
+  padding: 12px;
+  font-size: 15px;
+  color: #595959;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+.comment-box .comment-content span {
+  text-decoration: underline;
+}
+
+.comment-box .comment-name.by-author, .comment-box .comment-name.by-author a {
+  color: #03658c;
+}
+
+@media only screen and (max-width: 766px) {
+  .comments-container {
+    width: 480px;
+  }
+  .comments-list .comment-box {
+    width: 390px;
+  }
+  .reply-list .comment-box {
+    width: 320px;
+  }
+}
+
+/* =====================
+    Profile Page
+ ========================*/
+section.profile {
+  margin: 0 auto;
+  position: relative;
+  width: 325px;
+  border: 2px solid #171a1f;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+section.profile::after {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 3%;
+  z-index: -1;
+  width: 94%;
+  height: 1px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  content: '';
+}
+
+.profile-header {
+  height: 140px;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  background: #e8decd;
+}
+
+.profile-header img {
+  object-fit: cover;
+}
+
+.profile-content {
+  padding: 0 30px 30px;
+  border-radius: 0 0 5px 5px;
+  color: #e7e0cf;
+  text-align: center;
+  background: #2f363e;
+}
+
+.profile-content img {
+  margin-top: -75px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #e7e0cf;
+  border-radius: 100%;
+  background: #e7e0cf;
+}
+
+.profile-content h1 {
+  margin: 25px 0 0;
+  font-size: 1.4em;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+}
+
+.profile-content p {
+  margin: 5px 0 0;
+  color: #b49e6b;
+  font-size: 0.8125em;
+  font-weight: 200;
+}
+
+.profile-content button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  min-width: 160px;
+  background: #c54b30;
+  border: 1px solid #171c22;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 0 #d16e59;
+  color: #e7e0cf;
+  font-family: inherit;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  transition: background ease-out 0.15s;
+}
+
+.profile-content button:hover, .profile-content button:focus {
+  background: #ac422a;
+}
+
+.profile-content button:focus {
+  outline: none;
+}
+
+.profile-content button:active {
+  background: #943824;
+  transition: none;
+}
+
+.profile-content ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #171a1f;
+  border-radius: 0 0 7px 7px;
+  list-style: none;
+  background: #2f363e;
+}
+
+.profile-content ul li {
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #3e424d;
+  padding: 20px 10px;
+  color: #c54b30;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.profile-content ul li + li {
+  border-left: 1px solid #171a1f;
+  box-shadow: -1px 0 0 #3e424d;
+}
+
+.profile-content ul span {
+  display: inline-block;
+  margin-left: 0.4em;
+  color: #a9a9a9;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+/* =====================
+    Login, Signup Form
+ ========================*/
+.formBox {
+  width: 350px;
+  height: 480px;
+  margin: auto;
+  text-align: center;
+  list-style: none;
+  padding: 47px 20px 10px 10px;
+  background: #2E2E3D;
+  border-radius: 0px;
+  border: 1px solid black;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px 1px #303030;
+  box-shadow: -1px -1px 15px 1px #303030;
+}
+
+.formBox input {
+  background: #fff;
+  disply: block;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  font: 15px Georgia;
+  border: 0px;
+  border-bottom: 1px solid #c9c9c9;
+  border-radius: 0px;
+}
+
+.formBox [type=submit] {
+  margin-top: 25px;
+  width: 250px;
+  padding: 12px;
+  border: 0px;
+  background: #c54b30;
+  border: 1px solid #171c22;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 0 #d16e59;
+  color: #e7e0cf;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.formBox [type=submit]:hover, .formBox [type=submit]:focus {
+  background: #ac422a;
+}
+
+.formBox [type=submit]:focus {
+  outline: none;
+}
+
+.formBox [type=submit]:active {
+  background: #943824;
+  transition: none;
+}
+
+.formBox form a {
+  text-decoration: none;
+}
+
+/* =====================
+    Profile Page
+ ========================*/
+/*TILT*/
+.tilt {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
