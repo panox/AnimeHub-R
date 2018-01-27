@@ -1,0 +1,8 @@
+/*
+  Components
+    Animes Container Class Component
+      Does the ajax
+      Passes data on child
+    Anime Stateless Component
+      Reads props from parent and renders ui
+*/
